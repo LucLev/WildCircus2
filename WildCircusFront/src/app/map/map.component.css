@@ -1,0 +1,17 @@
+section{
+    height: 60vh;
+    padding: 0;
+    background: var(--color4);
+    padding-top:20px;
+    padding-bottom:20px;
+    border-bottom: solid 10px var(--color2)
+}
+.legend{
+    background: var(--color3);
+    padding-top:10px;
+    padding-bottom:10px;  
+}
+
+.map{
+    height: 50vh;
+}

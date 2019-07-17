@@ -1,0 +1,13 @@
+<nav class="container-fluid">
+    <div class="row">
+        <div class="col-2 logoCont">
+            <img [routerLink]="['/']" pageScroll pageScrollOffset="95" href="#top" class="logo" src="https://via.placeholder.com/150?text=logo" alt="logo">
+        </div>
+        <div class="col-10">
+            <button mat-button class="navButton col-3" [routerLink]="['/']" pageScroll pageScrollOffset="95" href="#perf">Performance</button>
+            <button mat-button class="navButton col-3" [routerLink]="['/']" pageScroll pageScrollOffset="100" href="#map">Map</button>
+            <button mat-button class="navButton col-3" [routerLink]="['/']" pageScroll pageScrollOffset="100" href="#user">Users</button>
+            <button mat-button class="navButton col-3" [routerLink]="['/login']">Log In</button>
+        </div>
+    </div>
+</nav>

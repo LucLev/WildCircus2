@@ -1,0 +1,113 @@
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <div class="col-10 offset-1 loginForm rounded">
+                <h1 class="col-12">New around here?</h1>
+                <div class="col-12">
+                    <mat-form-field class="col-12 " appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput [(ngModel)]="inputEmail" placeholder="exemple@mail.net">
+                    </mat-form-field>
+                </div>
+                <div class="col-12">
+                    <mat-form-field class="col-12 " appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input [(ngModel)]="inputUsername" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-12">
+                    <mat-form-field class="col-12 " appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input matInput [(ngModel)]="inputPassword" placeholder="Enter your password"
+                            [type]="hide ? 'password' : 'text'">
+                        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        <mat-hint>must be at least 6 character</mat-hint>
+                    </mat-form-field>
+                </div>
+                <div class="col-12">
+                    <div class="col-2">
+                        <img class="col-12" src="{{inputProfilepicture}}" alt="">
+                    </div>
+                    <mat-form-field class="col-10 " appearance="outline">
+                        <mat-label>Profile Picture Url</mat-label>
+                        <input [(ngModel)]="inputProfilepicture" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-12">
+                    <mat-form-field class="col-12 " appearance="outline">
+                        <mat-label>Introduce yourself</mat-label>
+                        <input [(ngModel)]="inputIntroduction" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-12">
+                    <mat-radio-group [(ngModel)]="inputIsArtist" aria-label="What type of user are you?">
+                        <mat-radio-button class="col-5" value="1">Public</mat-radio-button>
+                        <mat-radio-button class="col-5" value="2">Artist</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="col-12" *ngIf="inputIsArtist == 2">
+                    <div class="col-12">
+                        <mat-form-field class="col-12 " appearance="outline">
+                            <mat-label>Performance Name</mat-label>
+                            <input [(ngModel)]="inputPerfName" matInput>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field class="col-12 " appearance="outline">
+                            <mat-label>Performance Description</mat-label>
+                            <input [(ngModel)]="inputPerfDesc" matInput>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field class="col-12 " appearance="outline">
+                            <mat-label>Performance Longitude</mat-label>
+                            <input [(ngModel)]="inputPerfLong" matInput>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field class="col-12 " appearance="outline">
+                            <mat-label>Performance Latitude</mat-label>
+                            <input [(ngModel)]="inputPerfLat" matInput>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field>
+                            <input matInput [(ngModel)]="inputPerfDate" [matDatepicker]="picker"
+                                placeholder="Choose a date">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <mat-checkbox class="col-12">I agree with <a>This</a></mat-checkbox>
+                </div>
+
+                <div class="col-12">
+                    <button class="col-12" mat-raised-button (click)="addUser()">Create Acount</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="col-10 offset-1 loginForm rounded">
+                <h1 class="col-12">Log in</h1>
+                <div class="col-12">
+                    <mat-form-field class="col-12 " appearance="outline">
+                        <mat-label>Username or Email</mat-label>
+                        <input matInput placeholder="Username or Email">
+                    </mat-form-field>
+                </div>
+                <div class="col-12">
+                    <mat-form-field class="col-12 " appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+                        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </mat-form-field>
+                </div>
+                <div class="col-12">
+                    <button class="col-12" mat-raised-button>Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

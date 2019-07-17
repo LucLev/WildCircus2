@@ -1,0 +1,43 @@
+section{
+    height: 60vh;
+    padding: 0;
+    background: var(--color1);
+    position: relative;
+    border-bottom: solid 10px var(--color2);
+}
+.cardTitle{
+    text-align: center;
+}
+.perfCard{
+    height: 50vh;
+    background: var(--color1);
+    overflow: hidden;
+}
+
+.perfImg{
+    height: 100%;
+    display: block;
+}
+.showMore{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top:50px;
+    padding-bottom:50px;  
+    background: var(--alpha5);
+    color: white;
+}
+.perfInfo{
+    background: rgba(0, 0, 0, 0.829);
+    padding-top:10px;
+}
+.closeButton{
+    font-size: 3rem;
+    background: none;
+    border:none;
+    color: white;
+}
+.closeButton:hover{
+    color: rgba(255, 255, 255, 0.521);
+}

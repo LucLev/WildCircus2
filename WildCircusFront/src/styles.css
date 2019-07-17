@@ -1,0 +1,64 @@
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/nova-light/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import '../node_modules/leaflet/dist/leaflet.css';
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+:root{
+    --color1:#EEE1C8;
+    --color2:#B4FF59;
+    --color3:rgb(194, 89, 63);
+    --color4:#A4313F;
+    --color5:#331E2F;
+    --alpha1:#EEE1C886;
+    --alpha2:#B4FF5986;
+    --alpha3:#CFAB5F86;
+    --alpha4:#A4313F86;
+    --alpha5:#331E2F86;
+}
+.ui-carousel-dropdown{
+    display: none !important;     
+}
+.ui-carousel-mobiledropdown{
+    display: none !important;     
+}
+.ui-carousel-header-title{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: calc(1rem + 0.5vw);
+    width: 100%;
+    text-align: center;
+    display: block !important ;
+    color: white !important;
+}
+.ui-carousel-button{
+    height: 50px;
+    width: 20px;
+    display: inline-block !important;
+    position: absolute !important;
+    color: white !important;
+    background: rgba(238, 225, 200, 0.199);
+}
+.ui-carousel-header{
+    position: relative !important;
+    background: var(--color5) !important;
+}
+.ui-carousel-prev-button{
+    top:0;
+    left:0;
+}
+.ui-carousel-next-button{
+    top:0;
+    right:0;
+}
+.ui-carousel-viewport{
+    background: none !important;
+    border: none !important;
+}
+.h100{
+    height: 100%;
+}

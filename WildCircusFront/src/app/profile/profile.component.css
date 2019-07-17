@@ -1,0 +1,28 @@
+section{
+    height: 100vh;
+    background: var(--color3);
+    padding-top: 200px; 
+}
+.loginForm{
+    background: var(--color1);
+    border: solid 5px var(--color5);
+    padding-bottom: 10vh; 
+    padding-top: 5vh; 
+}
+h1{
+    text-align: center;
+}
+.input{
+    background: var(--color1)
+}
+a{
+    color: blue !important;
+}
+a:hover{
+    color: rgb(0, 119, 255) !important;
+    text-decoration: underline !important;
+}
+.userImg{
+    max-width: 100%;
+    max-height: 100%
+}

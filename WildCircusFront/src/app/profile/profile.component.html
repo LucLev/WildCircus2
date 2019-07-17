@@ -1,0 +1,39 @@
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="col-10 offset-1 loginForm rounded row">
+                <div class="col-6">
+                    <h1>Change password</h1>
+                    <mat-form-field class="col-12 " appearance="outline">
+                        <mat-label>Current Password</mat-label>
+                        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+                        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field class="col-12 " appearance="outline">
+                        <mat-label>New Password</mat-label>
+                        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+                        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        <mat-hint>must be at least 6 character</mat-hint>
+                    </mat-form-field>
+                </div>
+                <div class="col-6">
+                    <h1>Choose Status</h1>
+                    <mat-radio-group class="col-12" aria-label="Select an option">
+                        <mat-radio-button class="col-5" value="1">Standard User</mat-radio-button>
+                        <mat-radio-button class="col-5" value="2">Artist</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="col-6 row">
+                    <h1 class="col-12">Change profile picture</h1>
+                    <div class="col-2">
+                        <img class="userImg" src="https://via.placeholder.com/450?text=Icon" alt="">
+                    </div>
+                    
+                </div>
+                <div class="col-12">
+                    <button class="col-12" mat-raised-button>Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

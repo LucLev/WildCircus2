@@ -1,0 +1,25 @@
+<section id="perf" class="container-fluid">
+    <p-carousel  headerText="Performances" circular="circular" [value]="allPerf" numVisible="3">
+        <ng-template let-perf pTemplate="item">
+            <div class="perfCard" (click)="showMore(perf)">
+                <h1 class="cardTitle">{{perf.name}}</h1>
+                <img class="perfImg mx-auto" src="{{perf.icon}}" alt="">
+            </div>
+        </ng-template>
+    </p-carousel>
+    <div *ngIf="displayShowMore" class="showMore col-12">
+        <div class="row">
+            <button class="col-2 offset-10 closeButton" (click)="showMore()">⤬</button>
+        </div>
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-7 perfInfo rounded">
+                <h1>{{displayedPerf.name}}</h1>
+                <p>Artist:</p>
+                <p>{{displayedPerf.description}}</p>
+            </div>
+        </div>
+    </div>
+</section>

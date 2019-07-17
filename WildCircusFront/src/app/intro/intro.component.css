@@ -1,0 +1,9 @@
+.introImg {
+	width: 100%;
+}
+section{
+    overflow: hidden;
+    height: 100vh;
+    padding: 0;
+    border-bottom: solid 10px var(--color2)
+}

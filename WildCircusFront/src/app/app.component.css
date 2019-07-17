@@ -1,0 +1,15 @@
+.appContainer{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30vh;
+    overflow: hidden;
+    position: relative;
+}
+app-footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+}
+

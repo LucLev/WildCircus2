@@ -1,0 +1,55 @@
+section{
+    height: 60vh;
+    padding: 0;
+    background: var(--color1);
+    padding-top:20px;
+    padding-bottom:20px;
+    border-bottom: solid 10px var(--color2);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+.sectionTitle{
+    text-align: center;
+    color:white;
+    background: var(--color5);
+}
+.showMore{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top:50px;
+    padding-bottom:50px;  
+    background: var(--alpha5);
+    color: white;
+}
+.perfInfo{
+    background: rgba(0, 0, 0, 0.829);
+    padding-top:10px;
+}
+.closeButton{
+    font-size: 3rem;
+    background: none;
+    border:none;
+    color: white;
+}
+.closeButton:hover{
+    color: rgba(255, 255, 255, 0.521);
+}
+.userCard{
+    background: var(--color4);
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.userCardAbove{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.userImg{
+    max-width: 100%;
+    max-height: 100%;
+}
